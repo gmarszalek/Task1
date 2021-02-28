@@ -1,0 +1,23 @@
+.header {
+  background-color: $main-color;
+  box-shadow: 0rem 0.4rem 0.4rem 0rem $shadow-color;
+  height: 7rem;
+
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    padding: 1rem;
+  }
+  &__title {
+    margin-left: auto;
+    margin-right: 25%;
+  }
+  &__task-name {
+    font-size: 2.4rem;
+    margin-right: 5rem;
+  }
+  &__task-name--active {
+    color: #987700;
+  }
+}

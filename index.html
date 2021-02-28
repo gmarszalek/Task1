@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__img" src="./assets/logo.svg" alt="logo" />
+      </div>
+      <div class="header__title">
+        <span class="header__task-name header__task-name--active">Task 1</span>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="app">
+          <div class="app__config">
+            <div class="search-form">
+              <form id="get_cats">
+                <div class="search-form__box">
+                  <input type="text" name="cats-number" class="search-form__input" />
+                  <label class="search-form__label">Ilość kotów</label>
+                  <label class="search-form__label--error">Wartość ma być większa niż 0</label>
+                </div>
+                <input type="submit" value="SZUKAJ" id="get_cat" class="search-form__btn" />
+              </form>
+            </div>
+            <div class="app__settings">
+              <div class="sort">
+                <div class="sort__container">
+                  <div class="sort__text">Sortuj po datach</div>
+                  <div class="sort__button">
+                    <button id="sort__button-up">
+                      <img class="sort__img" src="./assets/arrow_up.svg" alt="arrow up" />
+                    </button>
+                    <button id="sort__button-down">
+                      <img class="sort__img" src="./assets/arrow_down.svg" alt="arrow down" />
+                    </button>
+                  </div>
+                </div>
+                <div class="sort__container">
+                  <div class="sort__text">Sortuj po id</div>
+                  <div class="sort__button">
+                    <button id="sort__id-up">
+                      <img class="sort__img" src="./assets/arrow_up.svg" alt="arrow up" />
+                    </button>
+                    <button id="sort__id-down">
+                      <img class="sort__img" src="./assets/arrow_down.svg" alt="arrow dwon" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="refresh">
+                <div class="refresh__button">
+                  <img id="refreshBtn" src="./assets/refresh.svg" alt="refresh buttn" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app__content"></div>
+        </div>
+      </div>
+    </main>
+    <div id="detailsContainer" class="details-container"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+.sort {
+  display: flex;
+  margin-bottom: 1rem;
+  &__container {
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+  }
+  &__text {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+  }
+  &__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    button {
+      outline: none;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  }
+  &__img:last-child {
+    margin-top: 1.5rem;
+  }
+}
