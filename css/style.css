@@ -44,6 +44,11 @@ html {
   margin-right: 25%;
 }
 
+.header__title a {
+  text-decoration: none;
+  color: #000;
+}
+
 .header__task-name {
   font-size: 2.4rem;
   margin-right: 5rem;
