@@ -12,6 +12,9 @@
   &__title {
     margin-left: auto;
     margin-right: 25%;
+    a {
+      text-decoration: none;
+    }
   }
   &__task-name {
     font-size: 2.4rem;
