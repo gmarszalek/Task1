@@ -10,7 +10,7 @@ const sortIdBtnDown = document.querySelector("#sort__id-down");
 const detailsContainer = document.querySelector("#detailsContainer");
 
 const init = async () => {
-  const resp = await fetch(`${apiUrl}/random?amount=30;
+  const resp = await fetch(`${apiUrl}/random?amount=30`);
   const data = await resp.json();
   searchInput.value = "";
   searchInput.classList.remove("valid");
